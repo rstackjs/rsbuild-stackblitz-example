@@ -1,0 +1,15 @@
+{
+  $schema: "https://docs.renovatebot.com/renovate-schema.json",
+  timezone: "Asia/Shanghai",
+  schedule: ["before 8am on wednesday"],
+  packageRules: [
+    {
+      packagePatterns: ["*"],
+      groupName: "all dependencies",
+      automerge: true,
+      automergeType: "pr",
+      rangeStrategy: "bump",
+      schedule: ["at any time"],
+    },
+  ],
+}
